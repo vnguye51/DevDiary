@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif}
+
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgb(64, 226, 43);
+    padding: 10px 5px;
+}
+
+
+
+
+#namebox{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px;
+}
+
+#search{
+    padding: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#search input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 35px;
+}
+
+#navlinks{
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+#navlinks div{
+    float:right;
+    background-color: red;
+    padding: 20px 20px;
+}
+
+a:hover{
+    color: white}
+
+
+
+#PostBox{
+    display: grid;
+    grid-gap: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#RightNav{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: orange;
+    width: 120px;
+}
+
+.Month{
+    right: 40px;
+}
+
+.post{
+    background-color: magenta;
+}
