@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>DevDiary</title>
@@ -21,29 +22,31 @@
     </div>
     <div class="grid-container">
         <div id='PostBox'> 
-            <div class='Month post'>August</div>
-            <div class ='post'>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </div>
-            <div class ='post'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </div>
         </div>
        
         <div id='RightNav'>
             <div id = 'CreatePost'>+</div>
+            <div id = 'Login'>Login</div>
+
             <div id = 'Highlights'>Highlights</div>
             <div id = 'Tags'>Tags</div>
             <div id = 'History'>History</div>
         </div>
     </div>
 
-    
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAo2QhVnln8JrLCbju4UE8iN-AhhnDC2pc",
+        authDomain: "personal-devlog.firebaseapp.com",
+        databaseURL: "https://personal-devlog.firebaseio.com",
+        projectId: "personal-devlog",
+        storageBucket: "personal-devlog.appspot.com",
+        messagingSenderId: "299807396877"
+    };
+    firebase.initializeApp(config);
+    </script>
     <!-- <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type='text/javascript' src='assets/javascript/app.js'></script>
