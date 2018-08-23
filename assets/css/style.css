@@ -19,6 +19,7 @@
     height: 40px;
     padding: 12px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .postBody{
@@ -34,6 +35,11 @@
     height: 40px;
     padding: 12px;
     margin-bottom: 10px;
+}
+
+
+.edit{
+    right: 40px;
 }
 
 #newText{
