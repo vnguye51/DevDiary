@@ -6,17 +6,17 @@ var editPostID
 
 console.log(database.ref())
 
-database.ref('posts').once('value',function(snapshot){
-    postsObj = snapshot.val()
-    for (key in postsObj){ 
-        var newPost = $('<div class="post">').html(postsObj[key]).attr('id',key)
-        var edit = $('<button class="edit">').html('Edit').attr('postKey', key).addClass('editButtons')
-        var cancel = $('<button class="editcancel" hidden>').html('Cancel').addClass('editButtons')
-        var removePost = $('<button class="delete">').attr('postKey',key).html('Delete').addClass('delete')
-        newPost.append(edit,cancel,removePost)
-        $('#PostBox').prepend(newPost)
-    }
-})
+// database.ref('posts').once('value',function(snapshot){
+//     postsObj = snapshot.val()
+//     for (key in postsObj){ 
+//         var newPost = $('<div class="post">').html(postsObj[key]).attr('id',key)
+//         var edit = $('<button class="edit">').html('Edit').attr('postKey', key).addClass('editButtons')
+//         var cancel = $('<button class="editcancel" hidden>').html('Cancel').addClass('editButtons')
+//         var removePost = $('<button class="delete">').attr('postKey',key).html('Delete').addClass('delete')
+//         newPost.append(edit,cancel,removePost)
+//         $('#PostBox').prepend(newPost)
+//     }
+// })
 
 database.ref('posts').on('child_added',function(snapshot){
     var postObj = snapshot.val()
