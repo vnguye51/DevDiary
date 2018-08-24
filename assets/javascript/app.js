@@ -121,5 +121,18 @@ $(document).on('keypress','#newTitle',function(event){
     return (event.which != 13)
 })
 
-
+$(document).on('keydown','.postElement',function(event){
+    // if (event.which == 219){
+    //     if(event.ctrlKey){
+    //         event.preventDefault()
+    //         $(this).append('-')
+    //     }
+    // }
+    if (event.which === 221) {
+        if (event.ctrlKey){
+            event.preventDefault();
+            $(this).append('\xa0\xa0\xa0\xa0')
+        }
+    }
+})
 

@@ -77,7 +77,6 @@
 #navlinks{
     grid-column: 3 / 4;
     grid-row: 1;
-
 }
 
 #navlinks div{
@@ -119,4 +118,9 @@ a:hover{
 .post{
     background-color: rgb(117, 197, 211);
 }
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Kosugi', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans', sans-serif; */
 
